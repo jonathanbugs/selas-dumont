@@ -46,6 +46,29 @@
 						</span>
 						<span class="tituloMaior">Nossos Produtos</span>
 					</h2>
+
+					<div class="infoProduto">
+						<div class="galeriaProduto">
+							<ul class="thumbs">
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
+							</ul>
+							<div class="imgDetalhe">
+								<img src="" alt="">
+							</div>
+						</div>
+						<div class="sobreProduto">
+							<h1 class="nomeProduto">Sela Australiana</h1>
+							<div class="descricaoProduto cms">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus erat ligula, in volutpat urna viverra at. Cras vel sem eget arcu consequat dictum. Nunc cursus quam mauris, vitae mattis nunc consequat bibendum.</p>
+							</div>
+
+							<a href="javascript:;" class="btMaisInfos">Quero saber mais sobre este produto</a>
+						</div>
+					</div>
+
+					<a href="" class="btVoltar">Voltar para a página de produtos</a>
 				</div>
 			</section>
 

@@ -1,5 +1,41 @@
 <footer id="rodape">
 	<div class="container clearfix">
+		<?php if($sessao != "home") { ?>
+		<ul class="infosRodape">
+			<li class="infoRodape">
+				<span class="foneRodape">(051) 3568 2905</span>
+				<a class="emailRodape" href="mailto:contato@selasdumont.com.br">contato@selasdumont.com.br</a>
+			</li>
+
+			<li class="infoRodape">
+				<address class="enderecoContato">
+					<span class="linha">Avenida Arnaldo Pereira da Silva, 208</span>
+					<span class="linha">Santos Dumont, São Leopoldo</span>
+					<span class="linha">RS, Brasil</span>
+				</address>
+			</li>
+
+			<li class="infoRodape">
+				<ul id="socialRodape" class="clearfix">
+					<li class="socialLi">
+						<a class="socialLink geralTransition" href="mailto:contato@selasdumont.com.br" target="_blank">
+							<span class="icone geralTransition icon_mail_alt"></span>
+						</a>
+					</li>
+					<li class="socialLi">
+						<a class="socialLink geralTransition" href="javascript:;" target="_blank">
+							<span class="icone geralTransition social_facebook"></span>
+						</a>
+					</li>
+					<li class="socialLi">
+						<a class="socialLink geralTransition" href="javascript:;" target="_blank">
+							<span class="icone geralTransition social_youtube"></span>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<?php } ?>
 		<p class="direitos">
 			designed by <a href="http://giulianovarriale.com" target="_blank">giulianovarriale.com</a> | coded by <a href="http://mamute.cc" target="_blank">mamute.cc</a>
 		</p>
@@ -7,93 +43,3 @@
 </footer>
 
 
-<div id="modalLojasFisicas" class="modal">
-	<span class="modalTitulo">Lojas Físicas</span>
-
-	<ul id="lojasUl">
-		<li class="lojasLi clearfix">
-			<span class="lojaTitulo">Loja da Fábrica</span>
-			<div class="lojaBloco">
-				<span class="icone icon_phone"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<a href="tel:+5135723000">51 3572 3000</a>
-					</li>
-					<li class="lojainfosLi">
-						<a href="mailto:contato@loja.com.br">contato@loja.com.br</a>
-					</li>
-					<li class="lojainfosLi">
-						<a href="http://www.loja.com.br" target="_blank">www.loja.com.br</a>
-					</li>
-				</ul>
-			</div>
-			<div class="lojaBloco">
-				<span class="icone icon_pin"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<span>Rua Juiz de Fora, 257,</span>
-						<span>Scharlau, São Leopoldo</span>
-						<span>RS, Brasil</span>
-					</li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="lojasLi clearfix">
-			<span class="lojaTitulo">Loja dos Pampas</span>
-			<div class="lojaBloco">
-				<span class="icone icon_phone"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<a href="tel:+5135723000">51 3572 3000</a>
-					</li>
-					<li class="lojainfosLi">
-						<a href="mailto:contato@loja.com.br">contato@loja.com.br</a>
-					</li>
-					<li class="lojainfosLi">
-						<a href="http://www.loja.com.br" target="_blank">www.loja.com.br</a>
-					</li>
-				</ul>
-			</div>
-			<div class="lojaBloco">
-				<span class="icone icon_pin"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<span>Rua Juiz de Fora, 257,</span>
-						<span>Scharlau, São Leopoldo</span>
-						<span>RS, Brasil</span>
-					</li>
-				</ul>
-			</div>
-		</li>
-	</ul>
-</div>
-
-<div id="modalLojasVirtuais" class="modal">
-	<span class="modalTitulo">Lojas Virtuais</span>
-
-	<ul id="lojasUl">
-		<li class="lojasLi">
-			<div class="lojaBloco">
-				<span class="icone icon_cursor"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<span class="lojaTitulo">Loja dos Pampas</span>
-						<a href="http://www.universocampeiro.com.br" target="_blank">www.universocampeiro.com.br</a>
-					</li>
-				</ul>
-			</div>
-		</li>
-		<li class="lojasLi">
-			<div class="lojaBloco">
-				<span class="icone icon_cursor"></span>
-				<ul class="lojainfosUl">
-					<li class="lojainfosLi">
-						<span class="lojaTitulo">Loja dos Pampas</span>
-						<a href="http://www.universocampeiro.com.br" target="_blank">www.universocampeiro.com.br</a>
-					</li>
-				</ul>
-			</div>
-		</li>
-	</ul>
-</div>

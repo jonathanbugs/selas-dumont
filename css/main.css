@@ -485,6 +485,15 @@ body {
 	width: 100%;
 }
 
+.internas #rodape {
+	background: #2d2929;
+	color: #FFF;
+}
+
+.internas #rodape a {
+	color: #FFF;
+}
+
 #rodape .direitos {
 	font-family: 'droid_serifitalic', arial, sans-serif;
 	font-size: 12px;
@@ -500,7 +509,112 @@ body {
 	text-decoration: underline;
 }
 
+.infosRodape {
+	padding: 115px 0;
+	font-size: 0;
+	text-align: center;
+}
 
+.infoRodape {
+	display: inline-block;
+	margin: 0 35px;
+	font-size: 14px;
+	list-style: none;
+	text-align: left;
+	vertical-align: top;
+}
+
+.foneRodape,
+.emailRodape {
+	display: block;
+	line-height: 1.5;
+}
+
+.emailRodape:hover {
+	text-decoration: underline;
+}
+
+.enderecoContato .linha {
+	display: block;
+	line-height: 1.5;
+	font-style: normal;
+}
+
+.internas #rodape .direitos {
+	padding: 0 0 25px 0;
+	color: #767474;
+}
+
+.internas #rodape .direitos a {
+	color: #767474;
+}
+
+/* ====================
+   ICONES SOCIAL MEDIA
+   ==================== */
+#socialUl {
+	margin-left: 4px;
+}
+
+.socialLi {
+	float: left;
+	margin-right: 17px;
+}
+
+.socialLink {
+	background: #FFF;
+	border: 2px solid #2d2929;
+	display: block;
+	text-align: center;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.socialLink .icone {
+	color: #2d2929;
+	font-size: 16px;
+	-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.socialLink:hover {
+	background: #2d2929;
+}
+
+.socialLink:hover .icone {
+	color: #FFF;
+}
+
+#socialRodape {
+	list-style: none;
+}
+
+.internas .socialLink {
+	background: transparent;
+	border-color: #FFF;
+	color: #FFF;
+}
+
+.internas .socialLink:hover {
+	background: #FFF;
+}
+
+.internas .socialLink .icone {
+	color: #FFF;
+}
+
+.internas .socialLink:hover .icone {
+	color: #2D2929;
+}
 
 /* ====================
    MODAL
