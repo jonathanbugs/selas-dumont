@@ -50,27 +50,34 @@
 					<div class="infoProduto clearfix">
 						<div class="galeriaProduto">
 							<ul class="thumbs">
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								<li class="itemThumb geralTransition">
+									<a class="linkThumb" href="javascript:;">
+										<div class="tableCell">
+											<img class="imgThumb" src="img/produto-detalhe/thumbs/1.png" alt="" />
+										</div>
+									</a>
 								</li>
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								<li class="itemThumb geralTransition">
+									<a class="linkThumb" href="javascript:;">
+										<div class="tableCell">
+											<img class="imgThumb" src="img/produto-detalhe/thumbs/2.png" alt="" />
+										</div>
+									</a>
 								</li>
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
-								</li>
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
-								</li>
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
-								</li>
-								<li class="itemThumb">
-									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								<li class="itemThumb geralTransition">
+									<a class="linkThumb" href="javascript:;">
+										<div class="tableCell">
+											<img class="imgThumb" src="img/produto-detalhe/thumbs/3.png" alt="" />
+										</div>
+									</a>
 								</li>
 							</ul>
 							<div class="imgDetalhe">
-								<img src="" alt="">
+								<div class="table">
+									<div class="tableCell">
+										<img class="imgDestaque" src="img/produto-detalhe/grandes/1.png" alt="" />
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="sobreProduto">
@@ -94,7 +101,7 @@
 		<script src="js/vendor/jquery-1.9.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/inicial.js"></script>
+		<script src="js/produto-detalhe.js"></script>
 	</body>
 </html>
  

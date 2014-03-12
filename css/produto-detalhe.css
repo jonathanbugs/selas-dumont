@@ -9,6 +9,10 @@
 *  END APAGAR DEPOIS
 ==========================*/
 
+.sessaoInterna:before {
+	height: 318px;
+}
+
 
 .infoProduto {
 	max-width: 1040px;
@@ -28,22 +32,45 @@
 	padding-right: 10px;
 }
 
+.itemThumb,
+.linkThumb {
+	height: 85px;
+}
+
 .itemThumb {
 	width: 85px;
-	height: 85px;
 	background: #FFF;
 	margin-bottom: 3px;
+}
+
+.itemThumbAtivo:hover {
+	border: 2px solid #2d2929;
+}
+
+.linkThumb {
+	display: table;
+	width: 100%;
+	background: yellow;
 }
 
 .itemThumb:last-child {
 	margin-bottom: 0;
 }
 
+.imgDetalhe,
+.imgDetalhe .table {
+	height: 525px;
+}
+
 .imgDetalhe {
 	float: left;
 	width: 526px;
-	height: 525px;
 	background: #FFF;
+}
+
+.imgDetalhe .table {
+	width: 100%;
+	background: red;
 }
 
 .sobreProduto {
