@@ -47,9 +47,24 @@
 						<span class="tituloMaior">Nossos Produtos</span>
 					</h2>
 
-					<div class="infoProduto">
+					<div class="infoProduto clearfix">
 						<div class="galeriaProduto">
 							<ul class="thumbs">
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
+								<li class="itemThumb">
+									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
+								</li>
 								<li class="itemThumb">
 									<a class="linkThumb" href="javascript:;"><img src="" alt=""></a>
 								</li>

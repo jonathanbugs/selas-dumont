@@ -1,0 +1,85 @@
+
+/*=========================
+*  APAGAR DEPOIS
+==========================*/
+.menuLi ul {
+	display: none;
+}
+/*=========================
+*  END APAGAR DEPOIS
+==========================*/
+
+
+.infoProduto {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.galeriaProduto {
+	float: left;
+}
+
+.galeriaProduto {
+	height: 525px;
+}
+
+.thumbs {
+	float: left;
+	padding-right: 10px;
+}
+
+.itemThumb {
+	width: 85px;
+	height: 85px;
+	background: #FFF;
+	margin-bottom: 3px;
+}
+
+.itemThumb:last-child {
+	margin-bottom: 0;
+}
+
+.imgDetalhe {
+	float: left;
+	width: 526px;
+	height: 525px;
+	background: #FFF;
+}
+
+.sobreProduto {
+	margin: 156px 0 0 70px;
+	float: left;
+	width: 348px;
+	text-align: left;
+}
+
+.nomeProduto {
+	font-family: "oswaldbold", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	line-height: 1;
+	padding-bottom: 30px;
+}
+
+.descricaoProduto p {
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+.descricaoProduto {
+	padding-bottom: 50px;
+}
+
+
+
+.btMaisInfos {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #2d2929;
+	padding-left: 25px;
+}
