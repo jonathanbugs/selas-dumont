@@ -472,6 +472,55 @@ body {
 
 
 /* ====================
+   MODAL
+   ==================== */
+.modal {
+	display: none;
+	width: 600px;
+	background: #f9f1e2;
+}
+
+.modal .modalTitulo {
+	background: #2d2929;
+	color: #FFF;
+	display: block;
+	font-family: 'oswaldbold', arial, sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	text-transform: uppercase;
+	padding: 25px 50px 20px;
+	position: relative;
+}
+
+#lojasUl {
+	padding: 45px 0 45px 50px;
+	border-bottom: 1px solid #e0d8cb;
+}
+
+#lojasUl li {
+	list-style: none;
+}
+
+.lojaTitulo {
+	display: block;
+	font-family: 'droid_serifitalic', arial, sans-serif;
+	font-size: 16px;
+}
+
+.lojaBloco {
+	float: left;
+	background: red;
+	position: relative;
+	padding-left: 40px;
+}
+
+#modalLojasVirtuais .lojaBloco {
+	float: none;
+}
+
+
+/* ====================
    MEDIA QUERIES
    ==================== */
 @media only screen and (max-width: 1100px) {
@@ -499,6 +548,15 @@ body {
 @media only screen and (max-width: 767px) {
 	.sessao {
 		padding: 60px 25px;
+	}
+
+
+	/* ====================
+	   MODAL
+	   ==================== */
+	.modal {
+		width: 280px;
+		padding: 0;
 	}
 }
 

@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/inicial.css"/>
+		<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -164,7 +165,7 @@
 					</p>
 					<ul id="ondeComprarUl" class="clearfix">
 						<li class="ondeComprarLi">
-							<a class="ondeComprarLink geralTransition" href="javascript:;">
+							<a class="ondeComprarLink geralTransition" href="#modalLojasFisicas">
 								<img src="img/fotos/lojas_fisicas.jpg" alt="Lojas F&iacute;sicas" />
 								<span class="circulo geralTransition">
 									<span class="titulo geralTransition">
@@ -178,7 +179,7 @@
 							</a>
 						</li>
 						<li class="ondeComprarLi">
-							<a class="ondeComprarLink geralTransition" href="javascript:;">
+							<a class="ondeComprarLink geralTransition" href="#modalLojasVirtuais">
 								<img src="img/fotos/lojas_virtuais.jpg" alt="Lojas Virtuais" />
 								<span class="circulo geralTransition">
 									<span class="titulo geralTransition">

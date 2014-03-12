@@ -2,6 +2,7 @@ $(document).ready(function(){
 	placeHolder();
 	imgRetina();
 	scrollPage();
+	modalLojas();
 });
 
 var $window = $(window);
@@ -69,5 +70,17 @@ function scrollPage(){
 			top: 0
 		},
 		//hash: true
+	});
+}
+
+
+/* =========
+   MODAL LOJAS
+   ========= */
+function modalLojas(){
+	$(".ondeComprarLink").fancybox({
+	 	fitToView: false,
+	 	padding: 0,
+		scrolling: "visible"
 	});
 }
