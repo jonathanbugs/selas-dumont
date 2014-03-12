@@ -23,6 +23,7 @@
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/produtos.css"/>
+		<link rel="stylesheet" href="css/chosen.css"/>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -30,6 +31,134 @@
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 		
+		<div id="wrapper" class="internas">
+			<? include 'includes/topo.php'; ?>
+
+			<!-- SESSAO PRODUTOS -->
+			<section id="produtos" class="sessaoInterna">
+				<div class="container">
+					<h2 class="sessaoTitulo">
+						<span class="tituloMenor clearfix">
+							<span class="tituloBg"></span>  
+							<span class="titulo">Conheça</span>
+							<span class="tituloBg"></span>
+						</span>
+						<span class="tituloMaior">Nossos Produtos</span>
+					</h2>
+				</div>
+				<nav id="menuProdutos">
+					<ul id="menuProdutosUl" class="clearfix">
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="all">Tudo</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="selas">Selas</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="bastos">Bastos</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="loros">Loros</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="caronas-e-xergas">Caronas e Xergas</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="redeas-e-bucais">Rédeas e Buçais</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="badanas">Badanas</a>
+						</li>
+						<li class="menuProdutosLi">
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="barrigueiras-e-travessoes">Barrigueiras e Travessões</a>
+						</li>
+					</ul>
+				</nav>
+
+
+				<form id="filtroCategoria">
+					<div>
+						<select data-placeholder="Filtar por Categoria" class="chosen-select">
+							<option value=""></option>
+							<optgroup label="Selas">
+								<option>Sela 1</option>
+								<option>Sela 2</option>
+								<option>Sela 3</option>
+								<option>Sela 4</option>
+							</optgroup>
+							<optgroup label="Bastos">
+								<option>Basto 1</option>
+								<option>Basto 2</option>
+							</optgroup>
+						</select>
+					</div>
+				</form>
+
+
+
+				<div id="listaProdutos">
+					<ul id="produtosUl" class="produtosUl clearfix geralTransition">
+						<li class="produtosLi mix selas geralTransition">
+							<a class="produtosLink" href="">
+								<span class="table">
+									<span class="tableCell">
+										<span class="verProduto geralTransition">Ver Produto</span>
+										<img class="produtosImg" src="img/produto1.png" />
+									</span>
+								</span>
+								<span class="produtosTitulo">Sela Australiana</span>
+							</a>
+						</li>
+						<li class="produtosLi mix selas geralTransition">
+							<a class="produtosLink" href="">
+								<span class="table">
+									<span class="tableCell">
+										<span class="verProduto geralTransition">Ver Produto</span>
+										<img class="produtosImg" src="img/produto2.png" />
+									</span>
+								</span>
+								<span class="produtosTitulo">Sela Casquinha</span>
+							</a>
+						</li>
+						<li class="produtosLi mix selas geralTransition">
+							<a class="produtosLink" href="">
+								<span class="table">
+									<span class="tableCell">
+										<span class="verProduto geralTransition">Ver Produto</span>
+										<img class="produtosImg" src="img/produto3.png" />
+									</span>
+								</span>
+								<span class="produtosTitulo">Sela Crioula</span>
+							</a>
+						</li>
+						<li class="produtosLi mix selas geralTransition">
+							<a class="produtosLink" href="">
+								<span class="table">
+									<span class="tableCell">
+										<span class="verProduto geralTransition">Ver Produto</span>
+										<img class="produtosImg" src="img/produto4.png" />
+									</span>
+								</span>
+								<span class="produtosTitulo">Sela Marrequinha Especial</span>
+							</a>
+						</li>
+						<li class="produtosLi mix bastos geralTransition">
+							<a class="produtosLink" href="">
+								<span class="table">
+									<span class="tableCell">
+										<span class="verProduto geralTransition">Ver Produto</span>
+										<img class="produtosImg" src="img/produto5.png" />
+									</span>
+								</span>
+								<span class="produtosTitulo">Basto Criolo</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<? include 'includes/rodape.php'; ?>
+		</div>
 
 		<!-- Scripts -->
 		<script src="js/vendor/jquery-1.9.1.min.js"></script>

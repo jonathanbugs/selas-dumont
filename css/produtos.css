@@ -1,0 +1,155 @@
+#menuProdutos {
+	background: #2d2929;
+	padding: 25px 0;
+	text-align: center;
+	font-size: 0;
+}
+
+.menuProdutosLi {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.menuProdutosLink {
+	border: 2px solid #2d2929;
+	color: #FFF;
+	display: block;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+}
+
+.menuProdutosLink:hover {
+	border: 2px solid #FFF;
+}
+
+
+/* =========
+   PRODUTOS
+   ========= */
+#listaProdutos {
+	text-align: center;
+	padding: 45px;
+}
+
+.produtosUl {
+	display: inline-block;
+	max-width: 1164px;
+}
+
+.produtosUl .mix {
+	opacity: 0;
+	display: none;
+}
+
+.produtosLi {
+	float: left;
+	margin: 0 3px 5px;
+}
+
+.produtosLink {
+	background: #FFF;
+	display: block;
+	width: 277px;
+	height: 356px;
+	padding: 4px;
+}
+
+.produtosLink .table {
+	background: #FFF;
+	width: 100%;
+	height: 290px;
+	position: relative;
+}
+
+.produtosLink .verProduto {
+	border-bottom: 3px solid #2d2929;
+	color: #2d2929;
+	font-family: 'oswaldbold', arial, sans-serif;
+	font-size: 14px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 86px;
+	height: 16px;
+	margin: -8px 0 0 -43px;
+	text-transform: uppercase;
+	z-index: 5;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.produtosLink .produtosTitulo {
+	color: #2d2929;
+	display: block;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+	font-size: 14px;
+	padding: 25px 15px 0;
+	text-align: left;
+}
+
+.produtosLink:hover .produtosImg {
+	opacity: 0.35;
+	-moz-opacity: 0.35;
+	filter: alpha(opacity=35);
+}
+
+.produtosLink:hover .verProduto {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.chosen-select,
+.chosen-container {
+	width: 100%;
+	display: none !important;
+}
+
+
+
+@media only screen and (max-width: 1279px) {
+	#produtosUl {
+		max-width: 873px;
+	}
+
+	.menuProdutosLi {
+		margin: 0 3px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	#produtosUl {
+		max-width: 582px;
+	}
+
+	#menuProdutos {
+		display: none;
+	}
+
+	.chosen-select {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#listaProdutos {
+		padding: 20px;
+	}
+
+	#produtosUl {
+		max-width: 250px;
+	}
+
+	.produtosLink {
+		width: 236px;
+		height: 315px;
+	}
+
+	.produtosLink .table {
+		height: 260px;
+	}
+}
+
