@@ -1,0 +1,589 @@
+/* ====================
+   SESSAO SELAS DUMONT
+   ==================== */
+#blocoFotos {
+	display: inline-block;
+	position: relative;
+}
+
+.linha {
+	background: #2d2929;
+	height: 4px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#fotosUl {
+	font-size: 0;
+	line-height: 0;
+	margin-top: 60px;
+	display: inline-block;
+}
+
+#fotosUl .fotosLi {
+	display: inline-block;
+	width: 295px;
+}
+
+#fotosUl .fotosLi img {
+	display: block;
+	width: 100%;
+}
+
+
+
+/* ====================
+   SESSAO PRODUTOS
+   ==================== */
+#sessaoProdutos {
+	background: url('../img/backgrounds/produtos.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#sessaoProdutos .sessaoTitulo {
+	margin-bottom: 10px;
+}
+
+#sessaoProdutos .tituloBg {
+	width: 80px;
+}
+
+#listaProdutos {
+	width: 1088px;
+	padding-top: 60px;
+	position: relative;
+	display: inline-block;
+	margin-left: -28px;
+}
+
+#produtosUl {
+	width: auto !important;
+	font-size: 0;
+	margin: 0 auto;
+}
+
+#produtosUl .produtosLi {
+	display: inline-block;
+	padding-left: 28px;
+}
+
+#produtosUl .produtosLink {
+	display: block;
+	position: relative;
+	width: 327px;
+	background: #FFF;
+	padding: 4px;
+}
+
+.produtoImagem {
+	width: 100%;
+	height: 401px;
+	display: block;
+	overflow: hidden;
+}
+
+#produtosUl .produtosImg {
+	display: block;
+	width: 100%;
+	-webkit-transition: all 0.7s cubic-bezier(0.000, 0.040, 0.050, 0.605);
+	-moz-transition: all 0.7s cubic-bezier(0.000, 0.040, 0.050, 0.605);
+	-ms-transition: all 0.7s cubic-bezier(0.000, 0.040, 0.050, 0.605);
+	-o-transition: all 0.7s cubic-bezier(0.000, 0.040, 0.050, 0.605);
+	transition: all 0.7s cubic-bezier(0.000, 0.040, 0.050, 0.605);
+}
+
+#produtosUl .produtosLink:hover .produtosImg {
+	width: 110%;
+}
+
+#produtosUl .produtosTitulo {
+	background: #FFF;
+	height: 78px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: left;
+}
+
+#produtosUl .produtosTitulo span {
+	color: #2d2929;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+	font-size: 16px;
+	line-height: 1em;
+	padding: 0 30px;
+}
+
+#listaProdutos .btProdutos {
+	border: 2px solid #FFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+}
+
+#listaProdutos .btProdutos.disabled {
+	cursor: inherit;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+#listaProdutos .btProdutos .icone {
+	color: #FFF;
+	display: inline-block;
+	font-size: 34px;
+	line-height: 44px;
+}
+
+#listaProdutos #anteriorProduto {
+	right: 55px;
+}
+
+#listaProdutos .btProdutos:hover {
+	background: #FFF;
+}
+
+#listaProdutos .btProdutos:hover .icone {
+	color: #2e2a2a;
+}
+
+
+
+/* ====================
+   SESSAO ONDE COMPRAR
+   ==================== */
+#sessaoOndeComprar .titulo {
+	margin: 0 20px;
+}
+
+#ondeComprarUl {
+	margin-top: 60px;
+}
+
+.ondeComprarLi {
+	display: inline-block;
+	margin: 0 15px;
+	background: #F4F4F4;
+}
+
+.ondeComprarLink {
+	width: 517px;
+	display: block;
+	position: relative;
+}
+
+.ondeComprarLink img {
+	display: block;
+	width: 100%;
+}
+
+.ondeComprarLink .circulo {
+	background: #2d2929;
+	color: #FFF;
+	width: 168px;
+	height: 168px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -84px 0 0 -84px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.ondeComprarLink:hover .circulo {
+	background: #FFF;
+	color: #2d2929;
+	text-align: center;
+}
+
+.ondeComprarLink .titulo {
+	display: inline-block;
+	border-bottom: 1px solid #FFF;
+	padding-top: 55px;
+}
+
+.ondeComprarLink .tituloLojas {
+	display: block;
+	position: relative;
+	line-height: 1em;
+}
+
+.ondeComprarLink .tituloLojas .nome {
+	background: #2d2929;
+	font-family: 'lobster_1.4regular', arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	padding: 0 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.ondeComprarLink .tituloLojas .linha {
+	background: #FFF;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -0.5px;
+	z-index: 1;
+}
+
+.ondeComprarLink .tituloTipo {
+	display: block;
+	font-family: 'oswaldbold', arial, sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.2em;
+	padding: 12px 0;
+	text-transform: uppercase;
+}
+
+.ondeComprarLink:hover .titulo {
+	border-color: #2d2929;
+}
+
+.ondeComprarLink:hover .tituloLojas .nome {
+	background: #FFF;
+}
+
+.ondeComprarLink:hover .tituloLojas .linha {
+	background: #2d2929;
+}
+
+
+/* ====================
+   SESSAO FALE CONOSCO
+   ==================== */
+#sessaoFaleConosco {
+	background: #FFF;
+	padding-bottom: 60px;
+}
+
+#sessaoFaleConosco .titulo {
+	margin: 0 13px;
+}
+
+#blocoContatos {
+	display: inline-block;
+}
+
+#formulario {
+	float: left;
+	margin-right: 40px;
+}
+
+#contatoForm {
+	width: 368px;
+}
+
+
+#contatoForm .relative {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+#contatoForm .label,
+#contatoForm .input,
+#contatoForm .textarea {
+	font-family: 'droid_serifitalic', arial, sans-serif;
+	color: #5e4f45;
+	font-size: 14px;
+}
+
+#contatoForm .label {
+	left: 20px;
+	position: absolute;
+	top: 14px;
+}
+
+#contatoForm .input,
+#contatoForm .textarea,
+#contatoResposta .message {
+	background: #FFF;
+	border: 2px solid #2d2929;
+	height: 42px;
+	outline: none;
+	padding: 0 18px;
+	width: 100%;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
+#contatoForm .input {
+	line-height: 18px;
+}
+
+#contatoForm .textarea {
+	height: 140px;
+	padding-top: 10px;
+	resize: none;
+}
+
+#contatoForm .input.error,
+#contatoForm .textarea.error {
+	border-color: #ff0000;	
+}
+
+.btSubmit {
+	background: #2d2929;
+	border: 2px solid #2d2929;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+	font-family: 'droid_serifbold_italic';
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+
+.btSubmit:hover {
+	background: #FFF;
+	color: #2d2929;
+}
+
+#contatoResposta {
+	height: 60px;
+	position: relative;
+}
+
+#contatoResposta .message {
+	color: #2d2929;
+	display: none;
+	font-size: 16px;
+	height: 48px;
+	line-height: 48px;
+	text-align: left;
+}
+
+#contatoResposta .txtMensagem {
+	font-family: 'droid_serifbold_italic';
+	font-size: 12px;
+}
+
+#contatoResposta #erroContato {
+	color: red; 
+}
+
+#contatoResposta .icone {
+	float: left;
+	padding-top: 16px;
+	margin-right: 10px;
+}
+
+#informacoesContato {
+	float: left;
+	text-align: left;
+}
+
+#informacoesContato .tituloGeral {
+	margin-bottom: 35px;
+}
+
+.informacoesUl {
+	margin-bottom: 35px;
+}
+
+.informacoesLi, 
+.informacoesLi a {
+	color: #2d2929;
+}
+
+#socialUl {
+	margin-left: 4px;
+}
+
+.socialLi {
+	float: left;
+	margin-right: 17px;
+}
+
+.socialLink {
+	background: #FFF;
+	border: 2px solid #2d2929;
+	display: block;
+	text-align: center;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.socialLink .icone {
+	color: #2d2929;
+	font-size: 16px;
+	-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.socialLink:hover {
+	background: #2d2929;
+}
+
+.socialLink:hover .icone {
+	color: #FFF;
+}
+
+
+
+
+
+
+/* ====================
+   MEDIA QUERIES
+   ==================== */
+@media only screen and (max-width: 1220px) {
+	/* ====================
+	   SESSAO SELAS DUMONT
+	   ==================== */
+	#fotosUl .fotosLi {
+		width: 240px;
+	}
+
+
+	/* ====================
+	   SESSAO PRODUTOS
+	   ==================== */
+	#listaProdutos {
+		width: 968px;
+		margin-left: -18px;
+	}
+
+	#produtosUl .produtosLi {
+		padding-left: 18px;
+	}
+
+	#produtosUl .produtosLink {
+		width: 297px;
+		height: 371px;
+	}
+
+	.produtoImagem {
+		width: 100%;
+	}
+
+
+	/* ====================
+	   SESSAO ONDE COMPRAR
+	   ==================== */
+	.ondeComprarLink {
+		width: 450px;
+	}
+}
+
+
+@media only screen and (max-width: 1023px) {
+	/* ====================
+	   SESSAO SELAS DUMONT
+	   ==================== */
+	#fotosUl .fotosLi {
+		width: 175px;
+	}
+
+
+	/* ====================
+	   SESSAO PRODUTOS
+	   ==================== */
+	#listaProdutos {
+		width: 645px;
+	}
+
+	
+	/* ====================
+	   SESSAO ONDE COMPRAR
+	   ==================== */
+	#ondeComprarUl {
+		display: inline-block;
+	}
+
+	.ondeComprarLi {
+		display: block;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	/* ====================
+	   SESSAO SELAS DUMONT
+	   ==================== */
+	#fotosUl .fotosLi {
+		width: 25%;	
+	}
+
+	/* ====================
+	   SESSAO PRODUTOS
+	   ==================== */
+	#listaProdutos {
+		width: 270px;
+	}
+
+	#produtosUl .produtosLink {
+		width: 244px;
+		height: 320px;
+	}
+
+
+	/* ====================
+	   SESSAO ONDE COMPRAR
+	   ==================== */
+	.ondeComprarLink {
+		width: 100%;
+		max-width: 517px;
+	}
+
+	.ondeComprarLink .circulo {
+		width: 120px;
+		height: 120px;
+		margin: -60px 0 0 -60px;
+	}
+
+	.ondeComprarLink .titulo {
+		padding-top: 35px;
+	}
+
+	.ondeComprarLink .tituloLojas .nome {
+		font-size: 13px;
+		padding: 0 5px;
+	}
+
+	.ondeComprarLink .tituloTipo {
+		font-size: 15px;
+	}
+
+
+	/* ====================
+	   SESSAO FALE CONOSCO
+	   ==================== */
+	#formulario {
+		float: none;
+		margin: 0;
+	}
+	
+	#contatoForm {
+		width: 100%;
+		max-width: 368px;
+	}
+}
