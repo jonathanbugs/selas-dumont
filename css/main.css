@@ -493,7 +493,7 @@ body {
 	position: relative;
 }
 
-#lojasUl {
+#lojasUl .lojasLi {
 	padding: 45px 0 45px 50px;
 	border-bottom: 1px solid #e0d8cb;
 }
@@ -503,20 +503,44 @@ body {
 }
 
 .lojaTitulo {
+	color: #2d2929;
 	display: block;
 	font-family: 'droid_serifitalic', arial, sans-serif;
 	font-size: 16px;
+	padding-bottom: 25px;
 }
 
 .lojaBloco {
 	float: left;
-	background: red;
 	position: relative;
 	padding-left: 40px;
+	width: 40%;
+}
+
+.lojaBloco .icone {
+	color: #2d2929; 
+	font-size: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #modalLojasVirtuais .lojaBloco {
 	float: none;
+}
+
+#modalLojasVirtuais .lojaTitulo {
+	font-family: 'droid_serifbold_italic';
+	font-size: 16px;
+}
+
+.lojainfosLi span,
+.lojainfosLi a {
+	font-family: 'droid_serifregular', arial, sans-serif;
+	font-size: 14px;
+	display: block;
+	color: #2d2929;
+	padding-bottom: 7px;
 }
 
 
@@ -557,6 +581,28 @@ body {
 	.modal {
 		width: 280px;
 		padding: 0;
+	}
+
+	.modal .modalTitulo {
+		padding-left: 25px;
+	}
+
+	.fancybox-close {
+		right: 25px;
+	}
+
+	.lojaBloco {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	#lojasUl .lojasLi {
+		padding: 25px 25px 5px 25px;
+	}
+
+	#modalLojasVirtuais .lojasLi a {
+		font-size: 12px;
 	}
 }
 

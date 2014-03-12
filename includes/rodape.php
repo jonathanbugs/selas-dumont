@@ -74,11 +74,22 @@
 
 	<ul id="lojasUl">
 		<li class="lojasLi">
-			<span class="lojaTitulo">Universo Campeiro</span>
 			<div class="lojaBloco">
-				<span class="icone icon_phone"></span>
+				<span class="icone icon_cursor"></span>
 				<ul class="lojainfosUl">
 					<li class="lojainfosLi">
+						<span class="lojaTitulo">Loja dos Pampas</span>
+						<a href="http://www.universocampeiro.com.br" target="_blank">www.universocampeiro.com.br</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="lojasLi">
+			<div class="lojaBloco">
+				<span class="icone icon_cursor"></span>
+				<ul class="lojainfosUl">
+					<li class="lojainfosLi">
+						<span class="lojaTitulo">Loja dos Pampas</span>
 						<a href="http://www.universocampeiro.com.br" target="_blank">www.universocampeiro.com.br</a>
 					</li>
 				</ul>

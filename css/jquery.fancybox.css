@@ -203,7 +203,6 @@
 
 .fancybox-title {
 	visibility: hidden;
-	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
@@ -256,4 +255,10 @@
 	padding: 10px;
 	background: #000;
 	background: rgba(0, 0, 0, .8);
+}
+
+@media only screen and (max-width: 767px) {
+	.fancybox-close {
+		right: 25px;
+	}
 }
