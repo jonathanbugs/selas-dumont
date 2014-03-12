@@ -41,8 +41,10 @@
 			</ul>
 		</nav>
 
-		<section id="banner">
-			<img src="img/banner/banner.jpg" alt="" />
-		</section>
+		<?php if( $sessao == "home" ) { ?>
+			<section id="banner">
+				<img src="img/banner/banner.jpg" alt="" />
+			</section>
+		<?php } ?>
 	</div>
 </header>
