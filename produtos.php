@@ -75,26 +75,17 @@
 					</ul>
 				</nav>
 
-
 				<form id="filtroCategoria">
 					<div>
-						<select data-placeholder="Filtar por Categoria" class="chosen-select">
+						<select data-placeholder="Todos" class="chosen-select">
 							<option value=""></option>
-							<optgroup label="Selas">
-								<option>Sela 1</option>
-								<option>Sela 2</option>
-								<option>Sela 3</option>
-								<option>Sela 4</option>
-							</optgroup>
-							<optgroup label="Bastos">
-								<option>Basto 1</option>
-								<option>Basto 2</option>
-							</optgroup>
+							<option>Todos</option>
+							<option>Selas</option>
+							<option>Bastos</option>
+							<option>Loros</option>
 						</select>
 					</div>
 				</form>
-
-
 
 				<div id="listaProdutos">
 					<ul id="produtosUl" class="produtosUl clearfix geralTransition">

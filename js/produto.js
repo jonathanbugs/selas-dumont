@@ -23,10 +23,9 @@ function produtos(){
 function selectCategorias(){
 	var config = {
 		'.chosen-select'           : {},
-		'.chosen-select-deselect'  : {allow_single_deselect:true},
+		'.chosen-select-deselect'  : {allow_single_deselect:false},
 		'.chosen-select-no-single' : {disable_search_threshold:10},
-		'.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-		'.chosen-select-width'     : {width:"95%"}
+		'.chosen-select-no-results': {no_results_text:'Oops, nothing found!'}
 	}
 
 	for (var selector in config) {

@@ -20,7 +20,8 @@
 	padding: 0 15px;
 }
 
-.menuProdutosLink:hover {
+.menuProdutosLink:hover,
+.menuProdutosLink.active {
 	border: 2px solid #FFF;
 }
 
@@ -102,10 +103,16 @@
 	filter: alpha(opacity=100);
 }
 
+#filtroCategoria {
+	text-align: left;
+	position: relative;
+	z-index: 1000;
+	display: none;
+}
+
 .chosen-select,
 .chosen-container {
 	width: 100%;
-	display: none !important;
 }
 
 
@@ -129,8 +136,8 @@
 		display: none;
 	}
 
-	.chosen-select {
-		display: block !important;
+	#filtroCategoria {
+		display: block;
 	}
 }
 
