@@ -48,7 +48,7 @@
 				<nav id="menuProdutos">
 					<ul id="menuProdutosUl" class="clearfix">
 						<li class="menuProdutosLi">
-							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="all">Tudo</a>
+							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="all">Todos</a>
 						</li>
 						<li class="menuProdutosLi">
 							<a class="menuProdutosLink geralTransition filter" href="javascript:;" data-filter="selas">Selas</a>
@@ -81,7 +81,7 @@
 					</a>
 					<ul id="filtroUl" class="clearfix">
 						<li class="filtroLi">
-							<a class="filtroLink filter" href="javascript:;" data-filter="all">Tudo</a>
+							<a class="filtroLink filter" href="javascript:;" data-filter="all">Todos</a>
 						</li>
 						<li class="filtroLi">
 							<a class="filtroLink filter" href="javascript:;" data-filter="selas">Selas</a>
