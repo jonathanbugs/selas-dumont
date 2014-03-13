@@ -1,7 +1,7 @@
 <?php
 require_once('../classes/class.phpmailer.php');
 
-$assuntoEmail = utf8_decode('Selas Dumont - Contato pelo site');
+$assuntoEmail = utf8_decode('Selas dumont - Mais Sobre Produto');
 $TO = array( 
 	'contato@cssroots.com.br'
 );
@@ -12,12 +12,16 @@ $BCC = array(
 	'giuliano@cssroots.com.br'
 );
 
+$produto  = trim($_POST['produto']);
 $nome     = trim($_POST['nome']);
+$telefone = trim($_POST['telefone']);
 $email    = trim($_POST['email']);
 $mensagem = trim($_POST['mensagem']);
 
 $mensagemHTML = "
+<strong>Produto:</strong> $produto<br /><br />
 <strong>Nome:</strong> $nome<br />
+<strong>Telefone:</strong> $telefone<br />
 <strong>Email:</strong> $email<br />
 ____________________________________<br />
 <br />$mensagem

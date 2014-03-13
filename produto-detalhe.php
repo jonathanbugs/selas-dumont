@@ -48,9 +48,9 @@
 					</h2>
 
 					<div class="infoProduto clearfix">
-						<div class="galeriaProduto">
+						<div class="galeriaProduto clearfix">
 							<ul class="thumbs">
-								<li class="itemThumb geralTransition">
+								<li class="itemThumb itemThumbCapa itemThumbAtivo geralTransition">
 									<a class="linkThumb" href="javascript:;">
 										<div class="tableCell">
 											<img class="imgThumb" src="img/produto-detalhe/thumbs/1.png" alt="" />
@@ -86,13 +86,66 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus erat ligula, in volutpat urna viverra at. Cras vel sem eget arcu consequat dictum. Nunc cursus quam mauris, vitae mattis nunc consequat bibendum.</p>
 							</div>
 
-							<a href="javascript:;" class="btMaisInfos">Quero saber mais sobre este produto</a>
+							<a href="#modalMaisInformacoes" class="bt btMaisInfos geralTransition">
+								Quero saber mais sobre este produto
+								<span class="icone geralTransition icon_plus"></span>
+							</a>
 						</div>
 					</div>
 
-					<a href="" class="btVoltar">Voltar para a página de produtos</a>
+					<a href="javascript:;" class="bt btVoltar geralTransition">
+						Voltar para a página de produtos
+						<span class="icone geralTransition arrow_carrot-left"></span>
+					</a>
 				</div>
 			</section>
+
+			<div id="modalMaisInformacoes" class="modal">
+				<span class="modalTitulo">Quero saber mais</span>
+				<div class="modalConteudo">
+					<span class="modalDescricao">Preencha os campos abaixo para saber mais sobre:</span>
+					<div class="produtoInfos clearfix">
+						<div class="blocoImagem">
+							<div class="table">
+								<div class="tableCell">
+									<img class="imagemProduto" src="" />
+								</div>
+							</div>
+						</div>
+						<div class="blocoTitulo">
+							<div class="table">
+								<div class="tableCell">
+									<span class="tituloProduto"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<form class="formModal" name="formInformacoes" id="formInformacoes">
+						<input type="hidden" value="" name="produto" id="produto">
+						<div class="relative">
+							<label class="label" for="nome">Nome</label>
+							<input class="input" name="nome" id="nome"/>
+						</div>
+						<div class="relative">
+							<label class="label" for="telefone">Telefone</label>
+							<input class="input" name="telefone" id="telefone"/>
+						</div>
+						<div class="relative">
+							<label class="label" for="email">E-mail</label>
+							<input class="input" name="email" id="email"/>
+						</div>
+						<div class="relative relativeTexarea">
+							<label class="label" for="mensagem">Informe o que você deseja saber sobre o produto</label>
+							<textarea class="textarea" name="mensagem" id="mensagem"></textarea>
+						</div>
+						<button type="submit" class="btEnviar geralTransition">Enviar</button>
+						<div class="errorBox">
+							Preencha os campos corretamente.
+						</div>
+					</form>	
+				</div>
+			</div>
 
 			<? include 'includes/rodape.php'; ?>
 		</div>

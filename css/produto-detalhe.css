@@ -1,3 +1,6 @@
+.sessaoTitulo .tituloMenor .tituloBg {
+	width: 78px;
+}
 
 /*=========================
 *  APAGAR DEPOIS
@@ -13,10 +16,9 @@
 	height: 318px;
 }
 
-
 .infoProduto {
 	max-width: 1040px;
-	margin: 0 auto;
+	margin: 0 20px;
 }
 
 .galeriaProduto {
@@ -41,16 +43,31 @@
 	width: 85px;
 	background: #FFF;
 	margin-bottom: 3px;
+	position: relative;
+	cursor: pointer;
 }
 
-.itemThumbAtivo:hover {
+.itemThumb:before {
+	border: 2px solid none;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.itemThumb:hover:before,
+.itemThumbAtivo:before {
 	border: 2px solid #2d2929;
 }
 
 .linkThumb {
 	display: table;
 	width: 100%;
-	background: yellow;
+	position: relative;
 }
 
 .itemThumb:last-child {
@@ -70,7 +87,7 @@
 
 .imgDetalhe .table {
 	width: 100%;
-	background: red;
+	background: #FFF;
 }
 
 .sobreProduto {
@@ -98,15 +115,266 @@
 	padding-bottom: 50px;
 }
 
+.bt {
+	border: 2px solid #2d2929;
+	color: #2d2929;
+	display: block;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+	font-size: 12px;
+	height: 46px;
+	line-height: 48px;
+	position: relative;
+}
+
+.bt .icone {
+	position: absolute;
+	right: 20px;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.bt:hover {
+	background: #2d2929;
+	color: #FFF;
+}
+
+.bt:hover .icone {
+	color: #FFF;
+}
 
 
 .btMaisInfos {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	height: 50px;
-	line-height: 50px;
-	border: 2px solid #2d2929;
+	text-align: left;
 	padding-left: 25px;
 }
+
+
+.btVoltar {
+	margin: 75px 40px 145px;
+}
+
+.btVoltar .icone {
+	left: 20px;
+	right: auto;
+}
+
+.modalConteudo {
+	padding: 40px 50px;
+}
+
+.modalDescricao {
+	display: block;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+}
+
+.produtoInfos {
+	margin-top: 20px;
+}
+
+.blocoImagem {
+	width: 25%;
+	height: 109px;
+	background: #FFF;
+	float: left;
+	text-align: center;
+}
+
+.blocoTitulo {
+	background: #FFF;
+	width: 74.5%;
+	float: right;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+}
+
+.blocoImagem .table,
+.blocoTitulo .table {
+	display: table;
+	width: 100%;
+	height: 109px;
+	text-align: center;
+}
+
+.formModal {
+	margin: 30px 25px 0;
+}
+
+.formModal .relative {
+	height: 16px;
+	line-height: 16px;
+	padding: 13px 20px;
+}
+
+.formModal .relative,
+.formModal .relativeTexarea {
+	background: #FFF;
+	position: relative;
+	margin-bottom: 5px;
+	border: 2px solid #2d2929;
+}
+
+.formModal .label,
+.formModal .input,
+.formModal .textarea {
+	font-family: 'droid_serifitalic', arial, sans-serif;
+	color: #5e4f45;
+	font-size: 14px;
+	display: block;
+	position: absolute;
+	left: 20px;
+}
+
+.formModal .label {
+	top: 14px;
+}
+
+.formModal .input {
+	height: 40px;
+}
+
+.formModal .relativeTexarea {
+	min-height: 95px;
+}
+
+.formModal .input,
+.formModal .textarea {
+	background: none;
+	top: 1px;
+	width: 93%;
+	border: none;
+	padding: 0;
+}
+
+.formModal .textarea {
+	height: 100px;
+	padding-top: 10px;
+}
+
+.formModal textarea {
+	resize: none;
+}
+
+.formModal .btEnviar {
+	background: #2d2929;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	border: 2px solid #2d2929;
+	font-family: 'droid_serifbold_italic', arial, sans-serif;
+	width: 100%;
+	height: 46px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 15px;
+}
+
+.formModal .btEnviar:hover {
+	background: #FFF;
+	color: #2d2929;
+}
+
+.formModal .errorBox {
+	border: none;
+	display: none;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	margin-top: 5px;
+	background: #ff0000;
+	color: #FFF;
+	text-align: center;
+}
+
+.formulario label.error {
+	display:none !important;
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.sobreProduto {
+		margin-left: 30px;
+	}
+
+	.galeriaProduto,
+	.sobreProduto {
+		margin: 0 auto;
+		float: none;
+		max-width: 575px;
+		width: auto;
+		height: auto;
+	}
+
+	.sobreProduto {
+		max-width: 385px;
+		margin-top: 50px;
+	}
+
+	.imgDetalhe, 
+	.imgDetalhe .table {
+		height: 479px;
+	}
+}
+
+@media only screen and (max-width: 1123px) {
+	.imgDetalhe {
+		width: 480px;
+	}
+
+	.imgDetalhe, 
+	.imgDetalhe .table {
+		height: auto;
+		padding: 15px 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.galeriaProduto {
+		position: relative;
+		padding-bottom: 100px;
+	}
+
+	.thumbs {
+		float: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 5px;
+	}
+
+	.itemThumb {
+		float: left;
+		margin-right: 3px;
+	}
+
+	.modalConteudo {
+		padding: 25px;
+	}
+
+	.blocoImagem,
+	.blocoTitulo {
+		width: 100%;
+		float: none;
+	}
+
+	.blocoTitulo {
+		margin-top: 2px;
+	}
+
+	.formModal {
+		margin: 30px 0 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btVoltar {
+		margin: 75px 15px 100px;
+		text-align: right;
+		padding-right: 20px;
+	}
+
+	.btVoltar .icone {
+		left: 5px;
+	}
+}
+
+
