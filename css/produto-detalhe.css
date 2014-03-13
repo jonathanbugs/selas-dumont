@@ -330,7 +330,17 @@
 @media only screen and (max-width: 767px) {
 	.galeriaProduto {
 		position: relative;
-		padding-bottom: 100px;
+		padding-bottom: 75px;
+		max-width: 385px;
+		margin-bottom: 100px;
+	}
+
+	.imgDetalhe {
+		width: 100%;
+	}
+
+	.imgDestaque {
+		width: 85%;
 	}
 
 	.thumbs {
@@ -338,12 +348,18 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 5px;
+		height: 70px;
+		bottom: 0;
 	}
 
 	.itemThumb {
 		float: left;
-		margin-right: 3px;
+		margin-right: 2px;
+		width: 70px;
+	}
+
+	.itemThumb, .linkThumb {
+		height: 70px;
 	}
 
 	.modalConteudo {
