@@ -2,6 +2,7 @@ $(document).ready(function(){
 	placeHolder();
 	imgRetina();
 	scrollPage();
+	abrirMenu();
 	modalLojas();
 });
 
@@ -12,6 +13,13 @@ var windowWidth = $window.width();
 $(window).on('resize', function(){
 	windowHeight = $window.height();
 	windowWidth = $window.width();
+
+	if(windowWidth > 1023){
+		$('#menuUl').show();
+	} else {
+		$('#menuUl').hide();
+		$('#btMenuMobile'). removeClass('btMenuMobileAberto');
+	}
 });
 
 
@@ -69,7 +77,27 @@ function scrollPage(){
 		offset: {
 			top: 0
 		},
-		//hash: true
+		hash: false
+	});
+}
+
+
+
+/* ============
+   MENU MOBILE
+   ============ */
+function abrirMenu(){
+	var divMenu = $('#menuUl');
+	
+	$('#btMenuMobile').on('click', function() {
+		var ele = $(this);
+		ele.toggleClass('btMenuMobileAberto');
+		
+		if (divMenu.is(":hidden")) {
+			divMenu.show();
+		}  else {
+			divMenu.hide();
+		}
 	});
 }
 
@@ -79,8 +107,8 @@ function scrollPage(){
    ========= */
 function modalLojas(){
 	$(".ondeComprarLink").fancybox({
-	 	fitToView: false,
-	 	padding: 0,
+		fitToView: false,
+		padding: 0,
 		scrolling: "visible"
 	});
 }

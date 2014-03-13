@@ -1,21 +1,40 @@
 <header id="topo" class="clearfix">
 	<div class="container">
 		<nav id="menu">
+
+			<a id="logoMobile" href="#topo">
+				<img src="img/logos/logo.png" data-src2x="img/logos/logo_2x.png" alt="Selas Dumont" />
+			</a>
+
+			<a id="btMenuMobile" href="javascript:;">
+				<span>menu <span class="icone geralTransition"></span></span>
+			</a>
 			<ul id="menuUl" class="clearfix">
-				<li class="menuLi geralTransition">
+				<li class="menuLi menuLiLeft geralTransition">
 					<a class="menuLink" href="#sessaoSelasDumont">
 						Selas Dumont
 						<span class="geralTransition"></span>
 					</a>
 				</li>
-				<li class="menuLi geralTransition">
-					<a class="menuLink" href="#sessaoProdutos">
+				<li class="menuLi menuLiProdutos geralTransition">
+					<a class="menuLink" href="produtos.php">
 						Nossos Produtos
-						<span class="geralTransition"></span>
 					</a>
 					<ul>
 						<li>
-							<a href="javscript:;">Selas</a>
+							<a href="javscript:;">Selas <span class="borda geralTransition"></span></a>
+						</li>
+						<li>
+							<a href="javscript:;">Bastos <span class="borda geralTransition"></span></a>
+						</li>
+						<li>
+							<a href="javscript:;">Loros <span class="borda geralTransition"></span></a>
+						</li>
+						<li>
+							<a href="javscript:;">Caronas e Xergos <span class="borda geralTransition"></span></a>
+						</li>
+						<li>
+							<a href="javscript:;">Rédeas e Buçais <span class="borda geralTransition"></span></a>
 						</li>
 					</ul>
 				</li>
@@ -26,13 +45,13 @@
 						</a>
 					</h1>
 				</li>
-				<li class="menuLi geralTransition">
+				<li class="menuLi menuLiComprar geralTransition">
 					<a class="menuLink" href="#sessaoOndeComprar">
 						Onde Comprar
 						<span class="geralTransition"></span>
 					</a>
 				</li>
-				<li class="menuLi menuLiLast geralTransition">
+				<li class="menuLi menuLiFaleConosco menuLiLast geralTransition">
 					<a class="menuLink" href="#sessaoFaleConosco">
 						Fale Conosco
 						<span class="geralTransition"></span>

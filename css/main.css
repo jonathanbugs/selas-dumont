@@ -423,12 +423,13 @@ body {
 }
 
 #menu {
-	padding-top: 60px;
+	position: relative;
+	margin-top: 60px;
 }
 
 #menuUl {
-	display: inline-block;
-	height: 82px;
+	display: block;
+	height: 65px;
 }
 
 #menuUl .menuLi {
@@ -442,8 +443,25 @@ body {
 	margin-right: 0;
 }
 
+#menuUl .menuLiProdutos {
+	margin-right: 375px;
+}
+
+#menuUl .menuLiComprar {
+	left: -14px;
+}
+
+#menu .menuLiFaleConosco {
+	left: -13px;
+}
+
 #menuUl .menuLiLogo {
 	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	margin-left: -75px;
 }
 
 #menuUl .menuLink {
@@ -477,7 +495,85 @@ body {
 	height: 100px;
 	display: block;
 	position: relative;
-	top: 15px;
+}
+
+#menuUl .menuLi ul {
+	background: #2d2929;
+	position: absolute;
+	left: -46px;
+	top: 60px;
+	width: 170px;
+	text-align: left;
+	padding: 10px 25px;
+	display: none;
+}
+
+#menuUl .menuLiProdutos:hover ul {
+	display: block;
+}
+
+#menuUl .menuLi ul li a {
+	color: #FFF;
+	display: block;
+	padding: 13px 4px;
+	position: relative;
+}
+
+#menuUl .menuLi ul li a .borda {
+	background: #FFF;
+	width: 0;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+}
+
+#menuUl .menuLi ul li a:hover .borda {
+	width: 100%;
+}
+
+#btMenuMobile {
+	background: #2d2929;
+	color: #FFF;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: none;
+	margin-top: 40px;
+}
+
+#btMenuMobile span {
+	font-family: 'droid_serifbold_italic';
+	padding-right: 25px;
+	position: relative;
+}
+
+#btMenuMobile span .icone {
+	background: url('../img/icones/menu.png') no-repeat;
+	width: 12px;
+	height: 15px;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	padding: 0;
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+}
+
+#btMenuMobile.btMenuMobileAberto span .icone {
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	transform:rotate(0deg);
+}
+
+#logoMobile {
+	display: none;
 }
 
 #banner img {
@@ -700,16 +796,78 @@ body {
 	#menuUl .menuLiLast {
 		margin-right: 0;
 	}
+
+	#menuUl .menuLiProdutos {
+		margin-right: 295px;
+	}
 }
 
 
 @media only screen and (max-width: 1023px) {
-	#menuUl .menuLi {
-		margin-right: 20px;
+	#menu {
+		margin-top: 30px;
 	}
 
-	#menuUl .menuLiLast {
-		margin-right: 0;
+	#logoMobile,
+	#btMenuMobile {
+		display: block;
+	}
+
+	#menuUl {
+		background: #332e2e;
+		height: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 190px;
+		display: none;
+	}
+
+	#menuUl .menuLi {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	#menuUl .menuLiLogo {
+		display: none;
+	}
+
+	#menuUl .menuLiComprar,
+	#menu .menuLiFaleConosco {
+		left: 0;
+	}
+
+	#menuUl .menuLink {
+		color: #FFF;
+		border-top: 1px solid #2d2929;
+		height: auto;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	#menuUl .menuLink span {
+		display: none;
+	}
+
+	#menuUl .menuLiProdutos:hover ul {
+		display: none;
+	}
+
+	.sessaoInterna .sessaoTitulo {
+		margin: 70px auto;
+	}
+}
+
+@media only screen and (max-width: 875px) {
+	.infosRodape {
+		display: inline-block;
+		padding: 70px 0;
+	}
+
+	.infoRodape {
+		display: block;
+		margin: 20px 0;
 	}
 }
 

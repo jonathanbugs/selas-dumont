@@ -92,7 +92,7 @@
 	    						<span class="icone geralTransition arrow_carrot-right"></span>
 	    					</a>
 
-							<ul id="produtosUl" class="clearfix" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#proximoProduto" data-cycle-prev="#anteriorProduto" data-cycle-carousel-visible="3" data-allow-wrap="false" data-cycle-slides="li">
+							<ul id="produtosUl" class="clearfix" data-cycle-log="false" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#proximoProduto" data-cycle-prev="#anteriorProduto" data-cycle-carousel-visible="3" data-allow-wrap="false" data-cycle-slides="li">
 								<li class="produtosLi">
 									<a class="produtosLink" href="javascript:;">
 										<span class="produtoImagem">

@@ -1,3 +1,7 @@
+.sessaoTitulo .tituloMenor .tituloBg {
+	width: 78px;
+}
+
 #menuProdutos {
 	background: #2d2929;
 	padding: 25px 0;
@@ -110,11 +114,45 @@
 	display: none;
 }
 
-.chosen-select,
-.chosen-container {
-	width: 100%;
+#btSelect {
+	background: #2d2929;
+	color: #FFF;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	position: relative;
 }
 
+#btSelect .icone {
+	background: url('../img/icones/select.png') no-repeat;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 17px;
+	height: 9px;
+	margin-top: -4px;
+}
+
+.btSelectAberto .icone {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+#filtroUl {
+	background: #2d2929;
+	display: none;
+}
+
+#filtroUl .filtroLink {
+	border-top: 1px solid #343030;
+	color: #FFF;
+	display: block;
+	padding: 20px 0 20px 30px;
+}
 
 
 @media only screen and (max-width: 1279px) {
@@ -143,7 +181,7 @@
 
 @media only screen and (max-width: 767px) {
 	#listaProdutos {
-		padding: 20px;
+		padding: 40px 20px;
 	}
 
 	#produtosUl {

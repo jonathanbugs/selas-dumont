@@ -23,7 +23,6 @@
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/produtos.css"/>
-		<link rel="stylesheet" href="css/chosen.css"/>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -75,17 +74,38 @@
 					</ul>
 				</nav>
 
-				<form id="filtroCategoria">
-					<div>
-						<select data-placeholder="Todos" class="chosen-select">
-							<option value=""></option>
-							<option>Todos</option>
-							<option>Selas</option>
-							<option>Bastos</option>
-							<option>Loros</option>
-						</select>
-					</div>
-				</form>
+				<div id="filtroCategoria">
+					<a id="btSelect" href="javascript:;">
+						<span class="txt">Todos</span>
+						<span class="icone geralTransition"></span>
+					</a>
+					<ul id="filtroUl" class="clearfix">
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="all">Tudo</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="selas">Selas</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="bastos">Bastos</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="loros">Loros</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="caronas-e-xergas">Caronas e Xergas</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="redeas-e-bucais">Rédeas e Buçais</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="badanas">Badanas</a>
+						</li>
+						<li class="filtroLi">
+							<a class="filtroLink filter" href="javascript:;" data-filter="barrigueiras-e-travessoes">Barrigueiras e Travessões</a>
+						</li>
+					</ul>
+				</div>
 
 				<div id="listaProdutos">
 					<ul id="produtosUl" class="produtosUl clearfix geralTransition">

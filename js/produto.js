@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	produtos();
-	selectCategorias();
+	filtroProdutos();
 });
 
 /* =========
@@ -19,16 +19,19 @@ function produtos(){
 	});
 }
 
+function filtroProdutos(){
+	var btSelect = $('#btSelect'),
+		textoSelect = btSelect.find('.txt');
 
-function selectCategorias(){
-	var config = {
-		'.chosen-select'           : {},
-		'.chosen-select-deselect'  : {allow_single_deselect:false},
-		'.chosen-select-no-single' : {disable_search_threshold:10},
-		'.chosen-select-no-results': {no_results_text:'Oops, nothing found!'}
-	}
+	btSelect.on('click', function(){
+		$(this).toggleClass('btSelectAberto').next().slideToggle();
 
-	for (var selector in config) {
-		$(selector).chosen(config[selector]);
-	}
+		$('.filtroLink').on('click', function(){
+			var textoSelecionado = $(this).html();
+			textoSelect.html(textoSelecionado);
+
+			btSelect.removeClass('btSelectAberto');
+			$('#filtroUl').slideUp('fast');
+		})
+	});
 }
